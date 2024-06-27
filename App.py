@@ -25,7 +25,7 @@ st.caption('''Este projeto utiliza a biblioteca Prophet para prever os níveis d
 st.subheader('Insira o número de dias para previsão:')
 
 # Recebendo o número de dias do usuário
-dias = st.number_input('', min_value=1, value=30, step=1)
+dias = st.number_input('', min_value=1, value=0, step=1)
 
 # Gerenciamento de estado
 if 'previsao_feita' not in st.session_state:
