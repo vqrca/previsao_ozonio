@@ -55,7 +55,7 @@ if st.button('Prever') or st.session_state.previsao_feita:
     yaxis={'title': 'Nível de Ozônio (O3 μg/m3)', 'title_font': {'color': 'black'}, 'tickfont': {'color': 'black'}}
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig)
 
  # Preparando a tabela de previsões
     st.session_state.tabela_previsao = previsao[['ds', 'yhat']].tail(dias)
